@@ -1,0 +1,475 @@
+#container {
+    position: relative;
+    width: 80%;
+    min-height: 1260px;
+    height: auto;
+    margin: auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20%;
+    height: 20px;
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7;
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  }
+  
+.slider:hover {
+    opacity: 1; 
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: brown; 
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    cursor: pointer; 
+}  
+
+#elements {
+    display: grid;
+    grid-template-columns: 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorOptions {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.FizzBuzz {
+    display: grid;
+    width: 85px;
+    height:80px;
+    margin: 5px;;
+    color: brown;
+    border-color: brown;
+    background-color: rgb(82, 220, 123);
+    border-style: dashed;
+    border-width:1px;
+    align-items: center;
+    justify-content: center;   
+}
+
+.Fizz {
+    display: grid;
+    width: 85px;
+    height: 80px;
+    margin: 5px;
+    color: brown;
+    border-color: brown;
+    border-style: dashed;
+    background-color: pink;
+    border-width:1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Buzz {
+    display: grid;
+    width: 85px;
+    height:80px;
+    margin: 5px;
+    color: brown;
+    border-color: brown;
+    background-color: #b18f94;
+    border-style: dashed;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.None {
+    display: grid;
+    width: 85px;
+    height: 80px;
+    margin: 5px;
+    color:rgb(77, 75, 75);
+    border-color: brown;
+    background-color: #3292ff;
+    border-style: dashed;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.valuecontainer {
+    width: 100%; 
+  }
+  
+#defaultGame {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(105, 105, 105);
+    color: #fff;
+    border-color: rgb(58, 57, 57);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#defaultGame:hover {
+    background-color: rgb(58, 57, 57);
+}
+
+#customGame {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(146, 99, 59);
+    border-color: rgb(69, 47, 28);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#customGame:hover {
+    background-color: rgb(69, 47, 28);
+}
+
+#clear {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    padding: 5px;
+    background-color: #d14643;
+    border-color: #ad1010;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#clear:hover {
+    background-color: #ad1010;
+}
+
+
+@media (max-width: 1024px) {
+    #container {
+    width: 95%;
+    min-height: 1270px;
+    height: auto;
+    margin : 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    }
+
+    #elements {
+    display: grid;
+    grid-template-columns: 85px 85px 85px 85px 85px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    }
+
+    #clear {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    }
+
+    input[type=number] {
+    width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    #container {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #elements {
+        display: grid;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-columns: 65px 65px 65px 65px 65px;
+    }
+
+    .FizzBuzz {
+        display: grid;
+        width: 65px;
+        height: 60px;
+        font-size: 13px;
+    }
+    .Fizz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .Buzz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .None {
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    
+    .colorOptions {
+        width: fit-content;
+    }
+
+    #clear {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    input[type=number]{
+    width: 14px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #container {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #elements {
+        display: grid;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-columns: 65px 65px 65px 65px 65px;
+    }
+
+    .FizzBuzz {
+        display: grid;
+        width: 65px;
+        height: 60px;
+        font-size: 13px;
+    }
+    .Fizz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .Buzz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .None {
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    
+    .colorOptions {
+        width: fit-content;
+    }
+
+    #clear {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    input[type=number]{
+    width: 14px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    #container {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #elements {
+        display: grid;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-columns: 65px 65px 65px 65px 65px;
+    }
+
+    .FizzBuzz {
+        display: grid;
+        width: 65px;
+        height: 60px;
+        font-size: 13px;
+    }
+    .Fizz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .Buzz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .None {
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    
+    .colorOptions {
+        width: fit-content;
+    }
+
+    #clear {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    input[type=number]{
+    width: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    #container {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #elements {
+        display: grid;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-columns: 65px 65px 65px 65px 65px;
+        margin-right: 10px;
+    }
+
+    .FizzBuzz {
+        display: grid;
+        width: 65px;
+        height: 60px;
+        font-size: 13px;
+    }
+    .Fizz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .Buzz {  
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    .None {
+        display: grid;
+        width: 65px;
+        height: 60px;
+    }
+    
+    .colorOptions {
+        width: fit-content;
+    }
+
+    #clear {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    input[type=number]{
+    width: 14px;
+    }
+}
+
+
+@media (max-width: 280px) {
+    #container {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(162, 141, 113, 0.9);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #elements {
+        display: grid;
+        grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+        grid-template-columns: 60px 60px 60px 60px;
+    }
+
+    .FizzBuzz {
+        display: grid;
+        width: 60px;
+        height: 55px;
+        font-size: 12px;
+    }
+    .Fizz {  
+        display: grid;
+        width: 60px;
+        height: 55px;
+    }
+    .Buzz {  
+        display: grid;
+        width: 60px;
+        height: 55px;
+    }
+    .None {
+        display: grid;
+        width: 60px;
+        height: 55px;
+    }
+    
+    .colorOptions {
+        width: fit-content;
+    }
+
+    #clear {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    input[type=number]{
+    width: 14px;
+    }
+}
+
+
+
